@@ -16,7 +16,7 @@ public class TargetFollow : MonoBehaviour
 		Vector3 pos = transform.position;
 		Vector3 destination = targetToFollow.position;
 
-		destination.x += xOffset;
+		destination.x -= xOffset;
 		destination.y += yOffset;
         transform.position = Vector3.SmoothDamp(pos, destination, ref velocity, dampTime);
     }
