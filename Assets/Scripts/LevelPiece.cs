@@ -1,13 +1,10 @@
 using System;
 using UnityEngine;
 
-namespace Level
+[Serializable]
+public class LevelPiece
 {
-    [Serializable]
-    public class LevelPiece
-    {
-        public string name;
-        public GameObject prefab;
-        public int probability;
-    }
+    public string name;
+    public GameObject prefab;
+    public int probability;
 }
