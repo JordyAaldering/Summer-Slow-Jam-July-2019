@@ -323,13 +323,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452f4421ab7bcec4cb9800ca22dce4a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawDistance: 35
-  levelPieces:
+  drawDistance: 10
+  pieces:
   - name: Floor
     prefab: {fileID: 1046014794327670890, guid: 358a402e2106166448565b63064ab7a9,
       type: 3}
-    pieceLength: 3.6
+    probability: 5
+  - name: Pit
+    prefab: {fileID: 7472802488562926729, guid: 34828a5569168f34e920b68e159a4c7a,
+      type: 3}
+    probability: 2
+  - name: Trap
+    prefab: {fileID: 8133183236578130756, guid: 4efce5c2d8b3db6479149882e9d28d84,
+      type: 3}
     probability: 1
+  pieceLength: 3.6
+  speed: 3
 --- !u!4 &2123232337
 Transform:
   m_ObjectHideFlags: 0

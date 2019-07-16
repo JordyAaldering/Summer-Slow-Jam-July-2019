@@ -8,7 +8,6 @@ namespace Level
     {
         public string name;
         public GameObject prefab;
-        public float pieceLength;
         public int probability;
     }
 }
