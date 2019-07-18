@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Abilities
@@ -56,6 +57,10 @@ namespace Abilities
             {
                 Destroy(gameObject);
             }
+            
+            _canDoubleJump = PlayerPrefs.GetInt("CanDoubleJump") == 1;
+            _canDuck = PlayerPrefs.GetInt("CanDuck") == 1;
+            _canShoot = PlayerPrefs.GetInt("CanShoot") == 1;
         }
     }
 }

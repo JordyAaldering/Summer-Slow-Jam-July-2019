@@ -27,29 +27,30 @@ namespace Player
         private void Update()
         {
             transform.Translate(forwardSpeed * Time.deltaTime * Vector3.forward);
+        }
 
-            if (Input.GetKey(KeyCode.A))
-            {
-                transform.Translate(moveSpeed * Time.deltaTime * Vector3.left);
-            }
-            else if (Input.GetKey(KeyCode.D))
-            {
-                transform.Translate(moveSpeed * Time.deltaTime * Vector3.right);
-            }
+        public void Move(float amount)
+        {
+            transform.Translate(moveSpeed * Time.deltaTime * new Vector3(amount, 0f, 0f));
+        }
 
-            if (Input.GetKeyDown(KeyCode.Space))
+        public void Jump()
+        {
+            if (IsGrounded)
             {
-                if (IsGrounded)
-                {
-                    canDoubleJump = true;
-                    rb.velocity = rb.velocity.With(y: jumpForce);
-                }
-                else if (CanJump)
-                {
-                    canDoubleJump = false;
-                    rb.velocity = rb.velocity.With(y: jumpForce);
-                }
+                canDoubleJump = true;
+                rb.velocity = rb.velocity.With(y: jumpForce);
             }
+            else if (CanJump)
+            {
+                canDoubleJump = false;
+                rb.velocity = rb.velocity.With(y: jumpForce);
+            }
+        }
+
+        public void Duck()
+        {
+            // todo: duck
         }
     }
 }
