@@ -15,7 +15,7 @@ namespace Player
         private bool IsGrounded => Physics.Raycast(groundCheck.position, Vector3.down, 0.05f);
 
         private bool canDoubleJump;
-        private bool CanJump => canDoubleJump && AbilityManager.instance.canDoubleJump;
+        private bool CanJump => canDoubleJump && AbilityManager.instance.CanDoubleJump;
 
         private Rigidbody rb;
 

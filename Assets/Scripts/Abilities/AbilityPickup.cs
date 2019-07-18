@@ -1,5 +1,4 @@
 ﻿#pragma warning disable 0649
-using System;
 using UnityEngine;
 
 namespace Abilities
@@ -13,7 +12,13 @@ namespace Abilities
             switch (ability)
             {
                 case Ability.doubleJump:
-                    AbilityManager.instance.canDoubleJump = true;
+                    AbilityManager.instance.CanDoubleJump = true;
+                    break;
+                case Ability.duck:
+                    AbilityManager.instance.CanDuck = true;
+                    break;
+                case Ability.shoot:
+                    AbilityManager.instance.CanShoot = true;
                     break;
             }
             

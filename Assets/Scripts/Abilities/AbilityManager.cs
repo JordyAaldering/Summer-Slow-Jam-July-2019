@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Abilities
@@ -6,8 +5,46 @@ namespace Abilities
     public class AbilityManager : MonoBehaviour
     {
         public static AbilityManager instance { get; private set; }
-        
-        public bool canDoubleJump;
+
+        private bool _canDoubleJump;
+        public bool CanDoubleJump
+        {
+            get => _canDoubleJump;
+            set
+            {
+                if (_canDoubleJump == value) return;
+                
+                _canDoubleJump = value;
+                PlayerPrefs.SetInt("CanDoubleJump", value ? 1 : 0);
+            }
+        }
+
+        private bool _canDuck;
+        public bool CanDuck
+        {
+            get => _canDuck;
+            set
+            {
+                if (_canDuck == value) return;
+                
+                _canDuck = value;
+                PlayerPrefs.SetInt("CanDuck", value ? 1 : 0);
+            }
+        }
+
+        private bool _canShoot;
+        public bool CanShoot
+        {
+            get => _canShoot;
+            set
+            {
+                if (_canShoot == value) return;
+                
+                _canShoot = value;
+                PlayerPrefs.SetInt("CanShoot", value ? 1 : 0);
+            }
+        }
+
 
         private void Awake()
         {
