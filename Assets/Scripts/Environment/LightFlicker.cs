@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace Environment
 {
-    [RequireComponent(typeof(Light))]
     public class LightFlicker : MonoBehaviour
     {
         [SerializeField] private float minIntensity = 0.25f;

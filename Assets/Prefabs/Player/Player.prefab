@@ -44,6 +44,8 @@ GameObject:
   - component: {fileID: 8565615010642230589}
   - component: {fileID: 8565615010643190925}
   - component: {fileID: 5134678852292048716}
+  - component: {fileID: 7441594040378674857}
+  - component: {fileID: 8390860517879138144}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -65,7 +67,7 @@ Transform:
   - {fileID: 9111112618764122867}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &8565615010645290779
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -154,6 +156,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54c296d250c52e948b61bfcb74315acc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalMovement: 3
-  verticalMovement: 3
+  forwardSpeed: 3
+  moveSpeed: 3
+  jumpForce: 3
   groundCheck: {fileID: 9111112618764122867}
+--- !u!114 &7441594040378674857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8565615010648433749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91258b8446647b94fa9b9c683d20a8d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8390860517879138144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8565615010648433749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1beae6d343884775a879b2b3a7376f6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDoubleJump: 0

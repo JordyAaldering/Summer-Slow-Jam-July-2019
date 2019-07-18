@@ -1146,26 +1146,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9111112618764122867, guid: 281411d7e3581834e96855f6b87a06b9,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9111112618764122867, guid: 281411d7e3581834e96855f6b87a06b9,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9111112618764122867, guid: 281411d7e3581834e96855f6b87a06b9,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565615010648433749, guid: 281411d7e3581834e96855f6b87a06b9,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 8565615010648256693, guid: 281411d7e3581834e96855f6b87a06b9,
         type: 3}
       propertyPath: m_RootOrder
@@ -1185,6 +1165,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9111112618764122867, guid: 281411d7e3581834e96855f6b87a06b9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9111112618764122867, guid: 281411d7e3581834e96855f6b87a06b9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9111112618764122867, guid: 281411d7e3581834e96855f6b87a06b9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565615010648433749, guid: 281411d7e3581834e96855f6b87a06b9,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 281411d7e3581834e96855f6b87a06b9, type: 3}

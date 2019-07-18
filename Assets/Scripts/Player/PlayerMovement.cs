@@ -1,9 +1,9 @@
 ﻿#pragma warning disable 0649
+using Abilities;
 using UnityEngine;
 
 namespace Player
 {
-    [RequireComponent(typeof(Rigidbody))]
     public class PlayerMovement : MonoBehaviour
     {
         [SerializeField] private float forwardSpeed = 3f;
@@ -15,8 +15,7 @@ namespace Player
         private bool IsGrounded => Physics.Raycast(groundCheck.position, Vector3.down, 0.05f);
 
         private bool canDoubleJump;
-        private bool doubleJumpUnlocked = true; // temporarily set to true
-        private bool CanDoubleJump => canDoubleJump && doubleJumpUnlocked;
+        private bool CanJump => canDoubleJump && AbilityManager.instance.canDoubleJump;
 
         private Rigidbody rb;
 
@@ -45,7 +44,7 @@ namespace Player
                     canDoubleJump = true;
                     rb.velocity = rb.velocity.With(y: jumpForce);
                 }
-                else if (CanDoubleJump)
+                else if (CanJump)
                 {
                     canDoubleJump = false;
                     rb.velocity = rb.velocity.With(y: jumpForce);
