@@ -6,7 +6,7 @@ namespace Abilities
     {
         private void OnTriggerEnter(Collider other)
         {
-            other.GetComponent<AbilityPickup>()?.Consume();
+            other.GetComponentInParent<AbilityPickup>()?.Consume();
         }
     }
 }

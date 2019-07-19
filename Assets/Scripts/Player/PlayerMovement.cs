@@ -48,7 +48,6 @@ namespace Player
 
         public void Jump()
         {
-            Debug.Log(IsGrounded);
             if (IsGrounded)
             {
                 canDoubleJump = true;
