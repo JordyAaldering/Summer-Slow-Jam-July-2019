@@ -39,7 +39,7 @@ namespace Player
             }
             else if (Input.GetMouseButtonDown(1))
             {
-                movement.Duck();
+                movement.Slide();
             }
             
             if (Input.GetMouseButtonDown(2))
