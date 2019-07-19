@@ -2,8 +2,9 @@ namespace Abilities
 {
     public enum Ability
     {
-       doubleJump,
-       slide,
-       shoot
+        jump,
+        doubleJump,
+        slide,
+        shoot
     }
 }

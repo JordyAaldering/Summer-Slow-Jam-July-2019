@@ -16,6 +16,7 @@ namespace Player
         [SerializeField] private Transform groundCheck;
 
         private bool IsGrounded => Physics.Raycast(groundCheck.position, Vector3.down, 0.05f);
+        private bool CanJump => IsGrounded && AbilityManager.instance.CanJump;
 
         private bool canDoubleJump;
         private bool CanDoubleJump => canDoubleJump && AbilityManager.instance.CanDoubleJump;
@@ -48,7 +49,7 @@ namespace Player
 
         public void Jump()
         {
-            if (IsGrounded)
+            if (CanJump)
             {
                 canDoubleJump = true;
                 rb.velocity = rb.velocity.With(y: jumpForce);

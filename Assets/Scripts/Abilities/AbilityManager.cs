@@ -8,6 +8,19 @@ namespace Abilities
 
         public AbilityUI abilityUI;
         
+        private bool _canJump;
+        public bool CanJump
+        {
+            get => _canJump;
+            set
+            {
+                if (_canJump == value) return;
+                
+                _canJump = value;
+                PlayerPrefs.SetInt("CanJump", value ? 1 : 0);
+            }
+        }
+        
         private bool _canDoubleJump;
         public bool CanDoubleJump
         {
@@ -21,16 +34,16 @@ namespace Abilities
             }
         }
 
-        private bool _canDuck;
-        public bool CanDuck
+        private bool _canSlide;
+        public bool CanSlide
         {
-            get => _canDuck;
+            get => _canSlide;
             set
             {
-                if (_canDuck == value) return;
+                if (_canSlide == value) return;
                 
-                _canDuck = value;
-                PlayerPrefs.SetInt("CanDuck", value ? 1 : 0);
+                _canSlide = value;
+                PlayerPrefs.SetInt("CanSlide", value ? 1 : 0);
             }
         }
 
@@ -58,9 +71,10 @@ namespace Abilities
             {
                 Destroy(gameObject);
             }
-            
+
+            _canJump = PlayerPrefs.GetInt("CanJump") == 1;
             _canDoubleJump = PlayerPrefs.GetInt("CanDoubleJump") == 1;
-            _canDuck = PlayerPrefs.GetInt("CanDuck") == 1;
+            _canSlide = PlayerPrefs.GetInt("CanSlide") == 1;
             _canShoot = PlayerPrefs.GetInt("CanShoot") == 1;
         }
     }
