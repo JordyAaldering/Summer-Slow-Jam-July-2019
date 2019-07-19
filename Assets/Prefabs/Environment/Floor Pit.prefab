@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7472802488562926728}
   m_Layer: 0
-  m_Name: FloorPit
+  m_Name: Floor Pit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +51,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 191782, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
       propertyPath: m_Name
-      value: fbBrickFloor_A (2)
+      value: Brick Floor A (2)
       objectReference: {fileID: 0}
     - target: {fileID: 449330, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -112,17 +112,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7472802488562926728}
     m_Modifications:
-    - target: {fileID: 101228, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
-      propertyPath: m_Name
-      value: fbBrickHalf (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -160,6 +156,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 101228, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
+      propertyPath: m_Name
+      value: Brick Half (5)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
 --- !u!4 &1045213636337876339 stripped
@@ -175,17 +175,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7472802488562926728}
     m_Modifications:
-    - target: {fileID: 101228, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
-      propertyPath: m_Name
-      value: fbBrickHalf (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -223,6 +219,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 101228, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
+      propertyPath: m_Name
+      value: Brick Half (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
 --- !u!4 &1464425064399870396 stripped
@@ -240,7 +240,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 191782, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
       propertyPath: m_Name
-      value: fbBrickFloor_A (3)
+      value: Brick Floor A (3)
       objectReference: {fileID: 0}
     - target: {fileID: 449330, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -303,7 +303,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 191782, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
       propertyPath: m_Name
-      value: fbBrickFloor_A (1)
+      value: Brick Floor A (1)
       objectReference: {fileID: 0}
     - target: {fileID: 449330, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -364,17 +364,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7472802488562926728}
     m_Modifications:
-    - target: {fileID: 101228, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
-      propertyPath: m_Name
-      value: fbBrickHalf
-      objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -412,6 +408,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 101228, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
+      propertyPath: m_Name
+      value: Brick Half
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
 --- !u!4 &2871067360078657214 stripped
@@ -427,17 +427,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7472802488562926728}
     m_Modifications:
-    - target: {fileID: 101228, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
-      propertyPath: m_Name
-      value: fbBrickHalf (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -475,6 +471,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 101228, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
+      propertyPath: m_Name
+      value: Brick Half (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
 --- !u!4 &3792031142668384153 stripped
@@ -490,17 +490,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7472802488562926728}
     m_Modifications:
-    - target: {fileID: 101228, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
-      propertyPath: m_Name
-      value: fbBrickHalf (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -538,6 +534,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 101228, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
+      propertyPath: m_Name
+      value: Brick Half (4)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
 --- !u!4 &3981391396962032195 stripped
@@ -553,10 +553,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7472802488562926728}
     m_Modifications:
-    - target: {fileID: 194322, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
-      propertyPath: m_Name
-      value: fbBrickFloor_B (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 487416, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.7
@@ -601,6 +597,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 194322, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
+      propertyPath: m_Name
+      value: Brick Floor B (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
 --- !u!4 &4855129174466181342 stripped
@@ -616,10 +616,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7472802488562926728}
     m_Modifications:
-    - target: {fileID: 194322, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
-      propertyPath: m_Name
-      value: fbBrickFloor_B
-      objectReference: {fileID: 0}
     - target: {fileID: 487416, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -664,6 +660,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 194322, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
+      propertyPath: m_Name
+      value: Brick Floor B
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
 --- !u!4 &6031283604138202879 stripped
@@ -681,7 +681,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 191782, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
       propertyPath: m_Name
-      value: fbBrickFloor_A
+      value: Brick Floor A
       objectReference: {fileID: 0}
     - target: {fileID: 449330, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -742,17 +742,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7472802488562926728}
     m_Modifications:
-    - target: {fileID: 101228, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
-      propertyPath: m_Name
-      value: fbBrickHalf (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -789,6 +785,10 @@ PrefabInstance:
     - target: {fileID: 483028, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 101228, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}
+      propertyPath: m_Name
+      value: Brick Half (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c229d151e36cb4798a7d740dbe9361b2, type: 3}

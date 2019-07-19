@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8133183236578130755}
   m_Layer: 0
-  m_Name: FloorTrap
+  m_Name: Floor Spike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +51,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 190012, guid: 848a810f22b5e4ff7928a4a05cf197f1, type: 3}
       propertyPath: m_Name
-      value: fbBrickFloorTrap (5)
+      value: Brick Trap (5)
       objectReference: {fileID: 0}
     - target: {fileID: 448502, guid: 848a810f22b5e4ff7928a4a05cf197f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -114,7 +114,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 190012, guid: 848a810f22b5e4ff7928a4a05cf197f1, type: 3}
       propertyPath: m_Name
-      value: fbBrickFloorTrap (3)
+      value: Brick Trap (3)
       objectReference: {fileID: 0}
     - target: {fileID: 448502, guid: 848a810f22b5e4ff7928a4a05cf197f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -177,7 +177,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 190012, guid: 848a810f22b5e4ff7928a4a05cf197f1, type: 3}
       propertyPath: m_Name
-      value: fbBrickFloorTrap
+      value: Brick Trap
       objectReference: {fileID: 0}
     - target: {fileID: 448502, guid: 848a810f22b5e4ff7928a4a05cf197f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -240,7 +240,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 191782, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
       propertyPath: m_Name
-      value: fbBrickFloor_A (1)
+      value: Brick Floor A (1)
       objectReference: {fileID: 0}
     - target: {fileID: 449330, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -303,7 +303,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 191782, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
       propertyPath: m_Name
-      value: fbBrickFloor_A
+      value: Brick Floor A
       objectReference: {fileID: 0}
     - target: {fileID: 449330, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -366,7 +366,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 190012, guid: 848a810f22b5e4ff7928a4a05cf197f1, type: 3}
       propertyPath: m_Name
-      value: fbBrickFloorTrap (1)
+      value: Brick Trap (1)
       objectReference: {fileID: 0}
     - target: {fileID: 448502, guid: 848a810f22b5e4ff7928a4a05cf197f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -429,7 +429,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 190012, guid: 848a810f22b5e4ff7928a4a05cf197f1, type: 3}
       propertyPath: m_Name
-      value: fbBrickFloorTrap (6)
+      value: Brick Trap (6)
       objectReference: {fileID: 0}
     - target: {fileID: 448502, guid: 848a810f22b5e4ff7928a4a05cf197f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -490,10 +490,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8133183236578130755}
     m_Modifications:
-    - target: {fileID: 194322, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
-      propertyPath: m_Name
-      value: fbBrickFloor_B
-      objectReference: {fileID: 0}
     - target: {fileID: 487416, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9
@@ -538,6 +534,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 194322, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
+      propertyPath: m_Name
+      value: Brick Floor B
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
 --- !u!4 &7040164272651866933 stripped
@@ -555,7 +555,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 190012, guid: 848a810f22b5e4ff7928a4a05cf197f1, type: 3}
       propertyPath: m_Name
-      value: fbBrickFloorTrap (2)
+      value: Brick Trap (2)
       objectReference: {fileID: 0}
     - target: {fileID: 448502, guid: 848a810f22b5e4ff7928a4a05cf197f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -616,10 +616,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8133183236578130755}
     m_Modifications:
-    - target: {fileID: 194322, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
-      propertyPath: m_Name
-      value: fbBrickFloor_B (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 487416, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.7
@@ -664,6 +660,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 194322, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
+      propertyPath: m_Name
+      value: Brick Floor B (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
 --- !u!4 &8536861632028232400 stripped
@@ -681,7 +681,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 190012, guid: 848a810f22b5e4ff7928a4a05cf197f1, type: 3}
       propertyPath: m_Name
-      value: fbBrickFloorTrap (4)
+      value: Brick Trap (4)
       objectReference: {fileID: 0}
     - target: {fileID: 448502, guid: 848a810f22b5e4ff7928a4a05cf197f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -744,7 +744,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 190012, guid: 848a810f22b5e4ff7928a4a05cf197f1, type: 3}
       propertyPath: m_Name
-      value: fbBrickFloorTrap (7)
+      value: Brick Trap (7)
       objectReference: {fileID: 0}
     - target: {fileID: 448502, guid: 848a810f22b5e4ff7928a4a05cf197f1, type: 3}
       propertyPath: m_LocalPosition.x
