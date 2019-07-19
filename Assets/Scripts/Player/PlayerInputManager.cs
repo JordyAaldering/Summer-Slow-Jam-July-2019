@@ -5,6 +5,8 @@ namespace Player
     public class PlayerInputManager : MonoBehaviour
     {
         [SerializeField] private float mouseDeadZone = 1f;
+        [SerializeField] private float speedModifier = 1f;
+        [SerializeField] private float speedClamp = 1f;
         
         private PlayerMovement movement;
         private PlayerCombat combat;
@@ -30,7 +32,7 @@ namespace Player
 
             if (Mathf.Abs(diff) > mouseDeadZone)
             {
-                movement.Move(Mathf.Clamp(diff / mouseDeadZone, -1, 1));
+                movement.Move(Mathf.Clamp(diff / (mouseDeadZone * speedModifier), -speedClamp, speedClamp));
             }
             
             if (Input.GetMouseButtonDown(0))

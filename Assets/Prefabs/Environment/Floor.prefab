@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1046014794327670885}
   m_Layer: 0
-  m_Name: Floor Solid
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -248,7 +248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 449330, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 449330, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
       propertyPath: m_LocalPosition.z

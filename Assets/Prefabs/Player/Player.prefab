@@ -225,6 +225,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseDeadZone: 15
+  speedModifier: 8
+  speedClamp: 2
 --- !u!114 &5134678852292048716
 MonoBehaviour:
   m_ObjectHideFlags: 0
