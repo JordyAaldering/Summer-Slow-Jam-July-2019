@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 218565985313694109}
   - component: {fileID: 218565985313694082}
   - component: {fileID: 218565985313694083}
-  - component: {fileID: 218565985313694110}
   m_Layer: 0
   m_Name: Ability Pickup
   m_TagString: Untagged
@@ -96,19 +95,6 @@ SphereCollider:
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &218565985313694083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218565985313694080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47f376762c732cb45b0c665294ecc0bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ability: 0
---- !u!114 &218565985313694110
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

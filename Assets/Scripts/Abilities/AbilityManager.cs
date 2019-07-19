@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Abilities
@@ -7,6 +6,8 @@ namespace Abilities
     {
         public static AbilityManager instance { get; private set; }
 
+        public AbilityUI abilityUI;
+        
         private bool _canDoubleJump;
         public bool CanDoubleJump
         {
