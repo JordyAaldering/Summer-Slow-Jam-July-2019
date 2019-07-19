@@ -8,9 +8,21 @@ namespace Player
         [SerializeField] private GameObject bulletPrefab;
         [SerializeField] private Transform bulletSpawnPoint;
         
+        [SerializeField] private float cooldown = 1f;
+
+        private void Update()
+        {
+            if (cooldown > 0f)
+            {
+                cooldown -= Time.deltaTime;
+            }
+        }
+
         public void Shoot()
         {
-            GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+            if (cooldown > 0f) return;
+            
+            Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
         }
     }
 }

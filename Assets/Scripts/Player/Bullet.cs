@@ -1,22 +1,37 @@
 ﻿using UnityEngine;
 
-public class Bullet : MonoBehaviour
+namespace Player
 {
-    [SerializeField] private float speed = 1f;
-    
-    private void Start()
+    public class Bullet : MonoBehaviour
     {
-        Rigidbody rb = GetComponent<Rigidbody>();
-        rb.velocity = speed * transform.forward;
-    }
+        [SerializeField] private float speed = 1f;
+        [SerializeField] private float lifetime = 5f;
 
-    private void OnCollisionEnter(Collision other)
-    {
-        GameObject go = other.gameObject;
-        if (go.CompareTag("Wall"))
+        private void Start()
         {
-            Destroy(go);
-            Destroy(gameObject);
+            GetComponent<Rigidbody>().velocity = speed * transform.forward;
+        }
+
+        private void Update()
+        {
+            if (lifetime > 0f)
+            {
+                lifetime -= Time.deltaTime;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
+
+        private void OnCollisionEnter(Collision other)
+        {
+            GameObject go = other.gameObject;
+            if (go.CompareTag("Wall"))
+            {
+                Destroy(go);
+                Destroy(gameObject);
+            }
         }
     }
 }
