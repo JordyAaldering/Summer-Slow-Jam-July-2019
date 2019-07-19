@@ -2,23 +2,26 @@
 using TMPro;
 using UnityEngine;
 
-public class AbilityUI : MonoBehaviour
+namespace Abilities
 {
-    [SerializeField] private GameObject abilityUnlockedPanel;
-    [SerializeField] private TextMeshProUGUI abilityText;
-    [SerializeField] private TextMeshProUGUI controlText;
-
-    public void Enable(string name, string control)
+    public class AbilityUI : MonoBehaviour
     {
-        Time.timeScale = 0f;
-        abilityText.text = name.ToUpper();
-        controlText.text = control.ToUpper();
-        abilityUnlockedPanel.SetActive(true);
-    }
+        [SerializeField] private GameObject abilityUnlockedPanel;
+        [SerializeField] private TextMeshProUGUI abilityText;
+        [SerializeField] private TextMeshProUGUI controlText;
 
-    public void Disable()
-    {
-        abilityUnlockedPanel.SetActive(false);
-        Time.timeScale = 1f;
+        public void Enable(string name, string control)
+        {
+            Time.timeScale = 0f;
+            abilityText.text = name.ToUpper();
+            controlText.text = control.ToUpper();
+            abilityUnlockedPanel.SetActive(true);
+        }
+
+        public void Disable()
+        {
+            abilityUnlockedPanel.SetActive(false);
+            Time.timeScale = 1f;
+        }
     }
 }

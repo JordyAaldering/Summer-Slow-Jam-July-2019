@@ -1,13 +1,11 @@
-﻿using System;
+﻿using UI;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Player
 {
     public class PlayerManager : MonoBehaviour
     {
         private Transform player;
-        private bool isDead;
 
         private void Awake()
         {
@@ -31,12 +29,17 @@ namespace Player
             }
         }
 
-        private void Die()
+        private static void Die()
         {
-            if (isDead) return;
+            FindObjectOfType<GameMenu>().GameOver();
+        }
 
-            isDead = true;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("End"))
+            {
+                FindObjectOfType<GameMenu>().LevelComplete();
+            }
         }
     }
 }
