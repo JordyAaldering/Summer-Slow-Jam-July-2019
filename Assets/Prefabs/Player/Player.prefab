@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardSpeed: 3
-  forwardIncrease: 0.0075
+  forwardIncrease: 0.006
   moveSpeed: 2
   jumpForce: 4
   slideCooldown: 2

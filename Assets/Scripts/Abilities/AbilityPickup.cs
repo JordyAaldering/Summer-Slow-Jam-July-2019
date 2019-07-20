@@ -1,43 +1,51 @@
-﻿#pragma warning disable 0649
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Abilities
 {
     public class AbilityPickup : MonoBehaviour
     {
-        [SerializeField] private Ability ability;
+        [SerializeField] private Ability ability = Ability.jump;
+
+        [SerializeField] private bool destroyAchieved = false;
 
         private void Start()
         {
-            switch (ability)
+            if (destroyAchieved)
             {
-                case Ability.jump:
-                    if (AbilityManager.instance.CanJump)
-                    {
-                        Destroy(gameObject);
-                    }
-                    break;
-                
-                case Ability.doubleJump:
-                    if (AbilityManager.instance.CanDoubleJump)
-                    {
-                        Destroy(gameObject);
-                    }
-                    break;
-                
-                case Ability.slide:
-                    if (AbilityManager.instance.CanSlide)
-                    {
-                        Destroy(gameObject);
-                    }
-                    break;
-                
-                case Ability.shoot:
-                    if (AbilityManager.instance.CanShoot)
-                    {
-                        Destroy(gameObject);
-                    }
-                    break;
+                switch (ability)
+                {
+                    case Ability.jump:
+                        if (AbilityManager.instance.CanJump)
+                        {
+                            Destroy(gameObject);
+                        }
+
+                        break;
+
+                    case Ability.doubleJump:
+                        if (AbilityManager.instance.CanDoubleJump)
+                        {
+                            Destroy(gameObject);
+                        }
+
+                        break;
+
+                    case Ability.slide:
+                        if (AbilityManager.instance.CanSlide)
+                        {
+                            Destroy(gameObject);
+                        }
+
+                        break;
+
+                    case Ability.shoot:
+                        if (AbilityManager.instance.CanShoot)
+                        {
+                            Destroy(gameObject);
+                        }
+
+                        break;
+                }
             }
         }
 
@@ -46,22 +54,22 @@ namespace Abilities
             switch (ability)
             {
                 case Ability.jump:
-                    AbilityManager.instance.abilityUI.Enable("Jump", "LMB");
+                    AbilityManager.instance.abilityUI.Enable("Jump", "Left Mouse");
                     AbilityManager.instance.CanJump = true;
                     break;
                 
                 case Ability.doubleJump:
-                    AbilityManager.instance.abilityUI.Enable("Double Jump", "LMB");
+                    AbilityManager.instance.abilityUI.Enable("Double Jump", "Left Mouse");
                     AbilityManager.instance.CanDoubleJump = true;
                     break;
                 
                 case Ability.slide:
-                    AbilityManager.instance.abilityUI.Enable("Slide", "RMB");
+                    AbilityManager.instance.abilityUI.Enable("Slide", "Right Mouse");
                     AbilityManager.instance.CanSlide = true;
                     break;
                 
                 case Ability.shoot:
-                    AbilityManager.instance.abilityUI.Enable("Shoot", "MMB");
+                    AbilityManager.instance.abilityUI.Enable("Shoot", "Middle Mouse");
                     AbilityManager.instance.CanShoot = true;
                     break;
             }

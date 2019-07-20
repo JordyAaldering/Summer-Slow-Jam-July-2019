@@ -12,7 +12,9 @@ namespace Player
         private PlayerCombat combat;
         private Transform player;
         private Camera cam;
-        
+
+        private static bool IsPaused => Time.timeScale < 0.1f;
+
         private void Start()
         {
             GameObject p = GameObject.FindWithTag("Player");
@@ -26,6 +28,8 @@ namespace Player
 
         private void Update()
         {
+            if (IsPaused) return;
+            
             Vector2 mousePos = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
             Vector3 playerPos = cam.WorldToScreenPoint(player.position);
             float diff = mousePos.x - playerPos.x;
