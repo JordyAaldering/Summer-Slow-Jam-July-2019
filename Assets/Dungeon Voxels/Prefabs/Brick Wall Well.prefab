@@ -4767,8 +4767,8 @@ GameObject:
   - component: {fileID: 2384052}
   - component: {fileID: 6591696}
   m_Layer: 0
-  m_Name: fbBrickWallWell
-  m_TagString: Untagged
+  m_Name: Brick Wall Well
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
