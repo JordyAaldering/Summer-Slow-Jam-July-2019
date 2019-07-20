@@ -7,7 +7,7 @@ namespace Player
     public class PlayerMovement : MonoBehaviour
     {
         [SerializeField] private float forwardSpeed = 3f;
-        [SerializeField] private float forwardIncrease = 1.1f;
+        [SerializeField] private float forwardIncrease = 0.1f;
         [SerializeField] private float moveSpeed = 3f;
         [SerializeField] private float jumpForce = 3f;
 
@@ -36,7 +36,7 @@ namespace Player
         private void Update()
         {
             transform.Translate(forwardSpeed * Time.deltaTime * Vector3.forward);
-            forwardSpeed += forwardIncrease * Time.deltaTime;
+            forwardSpeed += forwardSpeed * (forwardIncrease * Time.deltaTime);
 
             if (slideCooldownCounter > 0f)
             {

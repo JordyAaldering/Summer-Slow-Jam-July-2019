@@ -9,6 +9,11 @@ namespace UI
         [SerializeField] private GameObject gameOverPanel;
         [SerializeField] private GameObject levelCompletePanel;
 
+        private void Start()
+        {
+            Time.timeScale = 1f;
+        }
+
         public void GameOver()
         {
             Time.timeScale = 0f;
@@ -17,7 +22,6 @@ namespace UI
 
         public void Restart()
         {
-            Time.timeScale = 1f;
             SceneManager.LoadScene(1);
         }
 
@@ -29,7 +33,6 @@ namespace UI
 
         public void Menu()
         {
-            Time.timeScale = 1f;
             SceneManager.LoadScene(0);
         }
     }
