@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 6574348}
   - component: {fileID: 11457640}
   m_Layer: 0
-  m_Name: fbBrickFloorTrap
+  m_Name: Brick Trap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -186,8 +186,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9, z: 0.9}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.9, y: 0.1, z: 0.9}
+  m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!114 &11457640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,9 +200,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7ae826e4e834150b63bb789e332cec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spike: {fileID: 420408}
-  playerTag: Player
   activeDuration: 2
   inactiveDuration: 2
+  spike: {fileID: 420408}
   startActive: 1
   randomize: 1

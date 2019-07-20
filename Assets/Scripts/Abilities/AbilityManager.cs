@@ -59,8 +59,7 @@ namespace Abilities
                 PlayerPrefs.SetInt("CanShoot", value ? 1 : 0);
             }
         }
-
-
+        
         private void Awake()
         {
             if (!instance)

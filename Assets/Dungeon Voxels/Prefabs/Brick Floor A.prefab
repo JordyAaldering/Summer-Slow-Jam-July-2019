@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2382672}
   - component: {fileID: 6507452}
   m_Layer: 0
-  m_Name: fbBrickFloor_A
+  m_Name: Brick Floor A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91,5 +91,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9, z: 0.9}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.9, y: 0.1, z: 0.9}
+  m_Center: {x: 0, y: 0.4, z: 0}

@@ -9,36 +9,36 @@ namespace Abilities
 
         private void Start()
         {
-//            switch (ability)
-//            {
-//                case Ability.jump:
-//                    if (AbilityManager.instance.CanJump)
-//                    {
-//                        Destroy(gameObject);
-//                    }
-//                    break;
-//                
-//                case Ability.doubleJump:
-//                    if (AbilityManager.instance.CanDoubleJump)
-//                    {
-//                        Destroy(gameObject);
-//                    }
-//                    break;
-//                
-//                case Ability.slide:
-//                    if (AbilityManager.instance.CanSlide)
-//                    {
-//                        Destroy(gameObject);
-//                    }
-//                    break;
-//                
-//                case Ability.shoot:
-//                    if (AbilityManager.instance.CanShoot)
-//                    {
-//                        Destroy(gameObject);
-//                    }
-//                    break;
-//            }
+            switch (ability)
+            {
+                case Ability.jump:
+                    if (AbilityManager.instance.CanJump)
+                    {
+                        Destroy(gameObject);
+                    }
+                    break;
+                
+                case Ability.doubleJump:
+                    if (AbilityManager.instance.CanDoubleJump)
+                    {
+                        Destroy(gameObject);
+                    }
+                    break;
+                
+                case Ability.slide:
+                    if (AbilityManager.instance.CanSlide)
+                    {
+                        Destroy(gameObject);
+                    }
+                    break;
+                
+                case Ability.shoot:
+                    if (AbilityManager.instance.CanShoot)
+                    {
+                        Destroy(gameObject);
+                    }
+                    break;
+            }
         }
 
         public void Consume()
