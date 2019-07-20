@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Audio;
+using UnityEngine;
 
 namespace Player
 {
@@ -29,6 +30,8 @@ namespace Player
             GameObject go = other.gameObject;
             if (go.CompareTag("WallGlass"))
             {
+                AudioManager.instance.PlayEffect(AudioManager.instance.glassBreakClip);
+                
                 Destroy(go);
                 Destroy(gameObject);
             }

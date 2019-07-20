@@ -7,3 +7,7 @@ Theme: 'One More Time!'
 
 # Acknowledgements
 * [Voxel Dungeon Environment](https://assetstore.unity.com/packages/3d/environments/dungeons/voxel-dungeon-environment-set-1-57394)
+* [Dungeon Theme Music](https://opengameart.org/content/dungeon-theme)
+* [Glass Break Effect](https://opengameart.org/content/glass-break)
+* [Jump Effect](https://opengameart.org/content/jump-and-run-and-stand)
+* [Die Effect](https://opengameart.org/content/5-hit-sounds-dying)

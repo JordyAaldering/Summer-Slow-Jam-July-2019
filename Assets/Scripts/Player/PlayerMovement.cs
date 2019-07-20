@@ -1,5 +1,6 @@
 ﻿#pragma warning disable 0649
 using Abilities;
+using Audio;
 using UnityEngine;
 
 namespace Player
@@ -36,7 +37,6 @@ namespace Player
         private void Update()
         {
             forwardSpeed += forwardSpeed * (forwardIncrease * Time.deltaTime);
-//            transform.Translate(forwardSpeed * Time.deltaTime * Vector3.forward);
             rb.velocity = rb.velocity.With(x: forwardSpeed);
 
             if (slideCooldownCounter > 0f)
@@ -54,11 +54,15 @@ namespace Player
         {
             if (CanJump)
             {
+                AudioManager.instance.PlayEffect(AudioManager.instance.jumpClip);
+                
                 canDoubleJump = true;
                 rb.velocity = rb.velocity.With(y: jumpForce);
             }
             else if (CanDoubleJump)
             {
+                AudioManager.instance.PlayEffect(AudioManager.instance.jumpClip);
+                
                 canDoubleJump = false;
                 rb.velocity = rb.velocity.With(y: jumpForce);
             }
@@ -67,6 +71,8 @@ namespace Player
         public void Slide()
         {
             if (slideCooldownCounter > 0f) return;
+            
+            AudioManager.instance.PlayEffect(AudioManager.instance.slideClip);
             
             slideCooldownCounter = slideCooldown;
             anim.SetTrigger(slide);

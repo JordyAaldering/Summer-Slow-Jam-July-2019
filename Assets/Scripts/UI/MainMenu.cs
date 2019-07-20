@@ -5,7 +5,7 @@ namespace UI
 {
     public class MainMenu : MonoBehaviour
     {
-        public void Start()
+        public void Play()
         {
             SceneManager.LoadScene(1);
         }

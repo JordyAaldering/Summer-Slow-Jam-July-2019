@@ -1,4 +1,5 @@
-﻿using UI;
+﻿using Audio;
+using UI;
 using UnityEngine;
 
 namespace Player
@@ -31,6 +32,8 @@ namespace Player
 
         private static void Die()
         {
+            AudioManager.instance.PlayEffect(AudioManager.instance.dieClip);
+            
             FindObjectOfType<GameMenu>().GameOver();
         }
 
