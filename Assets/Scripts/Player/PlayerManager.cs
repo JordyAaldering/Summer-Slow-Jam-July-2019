@@ -30,11 +30,13 @@ namespace Player
             }
         }
 
-        private static void Die()
+        private void Die()
         {
             AudioManager.instance.PlayEffect(AudioManager.instance.dieClip);
             
             FindObjectOfType<GameMenu>().GameOver();
+
+            enabled = false;
         }
 
         private void OnTriggerEnter(Collider other)

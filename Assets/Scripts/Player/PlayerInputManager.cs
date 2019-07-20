@@ -7,6 +7,8 @@ namespace Player
         [SerializeField] private float mouseDeadZone = 1f;
         [SerializeField] private float speedModifier = 1f;
         [SerializeField] private float speedClamp = 1f;
+
+        private bool isJumpDown;
         
         private PlayerMovement movement;
         private PlayerCombat combat;
@@ -39,16 +41,25 @@ namespace Player
                 movement.Move(Mathf.Clamp(diff / (mouseDeadZone * speedModifier), -speedClamp, speedClamp));
             }
             
-            if (Input.GetMouseButtonDown(0))
+            if (Mathf.Abs(Input.GetAxisRaw("Jump")) > float.Epsilon)
             {
-                movement.Jump();
+                if (!isJumpDown)
+                {
+                    isJumpDown = true;
+                    movement.Jump();
+                }
             }
-            else if (Input.GetMouseButtonDown(1))
+            else
+            {
+                isJumpDown = false;
+            }
+            
+            if (Mathf.Abs(Input.GetAxisRaw("Slide")) > float.Epsilon)
             {
                 movement.Slide();
             }
             
-            if (Input.GetMouseButtonDown(2))
+            if (Mathf.Abs(Input.GetAxisRaw("Shoot")) > float.Epsilon)
             {
                 combat.Shoot();
             }
