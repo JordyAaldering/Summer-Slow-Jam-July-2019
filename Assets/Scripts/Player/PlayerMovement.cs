@@ -36,7 +36,8 @@ namespace Player
         private void Update()
         {
             forwardSpeed += forwardSpeed * (forwardIncrease * Time.deltaTime);
-            transform.Translate(forwardSpeed * Time.deltaTime * Vector3.forward);
+//            transform.Translate(forwardSpeed * Time.deltaTime * Vector3.forward);
+            rb.velocity = rb.velocity.With(x: forwardSpeed);
 
             if (slideCooldownCounter > 0f)
             {

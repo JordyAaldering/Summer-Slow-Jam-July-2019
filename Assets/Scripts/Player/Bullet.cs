@@ -27,7 +27,7 @@ namespace Player
         private void OnCollisionEnter(Collision other)
         {
             GameObject go = other.gameObject;
-            if (go.CompareTag("Wall"))
+            if (go.CompareTag("WallGlass"))
             {
                 Destroy(go);
                 Destroy(gameObject);

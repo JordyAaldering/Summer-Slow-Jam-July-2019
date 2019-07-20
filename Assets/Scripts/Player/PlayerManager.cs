@@ -23,7 +23,7 @@ namespace Player
         private void OnCollisionEnter(Collision other)
         {
             GameObject go = other.gameObject;
-            if (go.CompareTag("Spike") || go.CompareTag("Wall"))
+            if (go.CompareTag("Wall") || go.CompareTag("WallGlass"))
             {
                 Die();
             }
@@ -36,7 +36,11 @@ namespace Player
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("End"))
+            if (other.CompareTag("Spike"))
+            {
+                Die();
+            }
+            else if (other.CompareTag("End"))
             {
                 FindObjectOfType<GameMenu>().LevelComplete();
             }
