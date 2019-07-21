@@ -225,8 +225,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseDeadZone: 20
-  speedModifier: 8
-  speedClamp: 2
+  speedModifier: 7
+  speedClamp: 4.5
 --- !u!114 &5134678852292048716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,9 +239,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54c296d250c52e948b61bfcb74315acc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 3
-  forwardIncrease: 0.005
-  moveSpeed: 2
+  forwardSpeed: 4
+  moveSpeed: 1
+  speedIncrease: 0.005
   jumpForce: 4
   slideCooldown: 2
   groundCheck: {fileID: 9111112618764122867}

@@ -8,8 +8,8 @@ namespace Player
     public class PlayerMovement : MonoBehaviour
     {
         [SerializeField] private float forwardSpeed = 3f;
-        [SerializeField] private float forwardIncrease = 0.1f;
         [SerializeField] private float moveSpeed = 3f;
+        [SerializeField] private float speedIncrease = 0.005f;
         [SerializeField] private float jumpForce = 3f;
 
         [SerializeField] private float slideCooldown = 1f;
@@ -34,9 +34,12 @@ namespace Player
             anim = GetComponentInChildren<Animator>();
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
-            forwardSpeed += forwardSpeed * (forwardIncrease * Time.deltaTime);
+            float increase = (speedIncrease * Time.deltaTime);
+            
+            forwardSpeed += forwardSpeed * increase;
+            moveSpeed += moveSpeed * increase;
             rb.velocity = rb.velocity.With(x: forwardSpeed);
 
             if (slideCooldownCounter > 0f)
@@ -70,7 +73,7 @@ namespace Player
 
         public void Slide()
         {
-            if (slideCooldownCounter > 0f) return;
+            if (!AbilityManager.instance.CanSlide || slideCooldownCounter > 0f) return;
             
             AudioManager.instance.PlayEffect(AudioManager.instance.slideClip);
             

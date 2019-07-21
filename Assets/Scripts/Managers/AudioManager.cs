@@ -12,6 +12,7 @@ namespace Audio
         public AudioClip jumpClip;
         public AudioClip slideClip;
         public AudioClip dieClip;
+        public AudioClip winClip;
         public AudioClip glassBreakClip;
 
         private void Awake()
@@ -19,6 +20,7 @@ namespace Audio
             if (!instance)
             {
                 instance = this;
+                DontDestroyOnLoad(this);
             }
             else if (instance != this)
             {

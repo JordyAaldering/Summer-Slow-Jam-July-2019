@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ability: 0
+  destroyAchieved: 1
 --- !u!1 &1498444791343432456
 GameObject:
   m_ObjectHideFlags: 0

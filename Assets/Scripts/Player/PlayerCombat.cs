@@ -1,4 +1,5 @@
 ﻿#pragma warning disable 0649
+using Abilities;
 using UnityEngine;
 
 namespace Player
@@ -21,7 +22,7 @@ namespace Player
 
         public void Shoot()
         {
-            if (shootCooldownCounter > 0f) return;
+            if (!AbilityManager.instance.CanShoot || shootCooldownCounter > 0f) return;
 
             shootCooldownCounter = shootCooldown;
             Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);

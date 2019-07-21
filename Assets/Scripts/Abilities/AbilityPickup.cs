@@ -6,7 +6,7 @@ namespace Abilities
     {
         [SerializeField] private Ability ability = Ability.jump;
 
-        [SerializeField] private bool destroyAchieved = false;
+        [SerializeField] private bool destroyAchieved = true;
 
         private void Start()
         {

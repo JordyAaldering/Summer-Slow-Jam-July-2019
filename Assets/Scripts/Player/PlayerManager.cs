@@ -47,6 +47,8 @@ namespace Player
             }
             else if (other.CompareTag("End"))
             {
+                AudioManager.instance.PlayEffect(AudioManager.instance.winClip);
+                
                 FindObjectOfType<GameMenu>().LevelComplete();
             }
         }

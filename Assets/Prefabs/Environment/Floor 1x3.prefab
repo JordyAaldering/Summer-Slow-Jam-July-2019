@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1046014794327670885}
+  - component: {fileID: 3432103721738825068}
   m_Layer: 0
   m_Name: Floor 1x3
   m_TagString: Untagged
@@ -33,6 +34,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3432103721738825068
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046014794327670890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.1, z: 2.7}
+  m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!1001 &936194132389988204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40,10 +54,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1046014794327670885}
     m_Modifications:
-    - target: {fileID: 191782, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
-      propertyPath: m_Name
-      value: Brick Floor A
-      objectReference: {fileID: 0}
     - target: {fileID: 449330, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -88,7 +98,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 191782, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
+      propertyPath: m_Name
+      value: Brick Floor A
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6507452, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
 --- !u!4 &936194132390435934 stripped
 Transform:
@@ -103,10 +118,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1046014794327670885}
     m_Modifications:
-    - target: {fileID: 191782, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
-      propertyPath: m_Name
-      value: Brick Floor A (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 449330, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -151,7 +162,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 191782, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
+      propertyPath: m_Name
+      value: Brick Floor A (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6507452, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ef4851c21912b4f9aa3f51d829b396ca, type: 3}
 --- !u!4 &1087889860279529489 stripped
 Transform:
@@ -214,7 +230,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick Floor B
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6585500, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f93221987e6b04aa191515ab5b9cfae2, type: 3}
 --- !u!4 &7138948655519479834 stripped
 Transform:

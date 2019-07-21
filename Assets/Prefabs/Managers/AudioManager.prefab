@@ -241,4 +241,5 @@ MonoBehaviour:
   jumpClip: {fileID: 8300000, guid: e0e97dc65fdb4f3409968d56f85a14d5, type: 3}
   slideClip: {fileID: 8300000, guid: 74bf4cf448c41c148a40b8470eca18cc, type: 3}
   dieClip: {fileID: 8300000, guid: 2c3d7502729c9884a8923d620cb2ae94, type: 3}
+  winClip: {fileID: 8300000, guid: 6ff57b33b1e603a499b7b77b53ff7fb4, type: 3}
   glassBreakClip: {fileID: 8300000, guid: 679c28fb9a8f02d4aa98713f3bdd7d6f, type: 3}

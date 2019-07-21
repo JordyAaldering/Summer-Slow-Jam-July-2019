@@ -11,3 +11,4 @@ Theme: 'One More Time!'
 * [Glass Break Effect](https://opengameart.org/content/glass-break)
 * [Jump Effect](https://opengameart.org/content/jump-and-run-and-stand)
 * [Die Effect](https://opengameart.org/content/5-hit-sounds-dying)
+* [Win Effect](https://opengameart.org/content/win-sound-effect)
