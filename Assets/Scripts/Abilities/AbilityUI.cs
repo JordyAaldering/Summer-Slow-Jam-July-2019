@@ -1,14 +1,14 @@
 ﻿#pragma warning disable 0649
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Abilities
 {
     public class AbilityUI : MonoBehaviour
     {
         [SerializeField] private GameObject abilityUnlockedPanel;
-        [SerializeField] private TextMeshProUGUI abilityText;
-        [SerializeField] private TextMeshProUGUI controlText;
+        [SerializeField] private Text abilityText;
+        [SerializeField] private Text controlText;
 
         public void Enable(string name, string control)
         {
