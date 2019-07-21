@@ -39,7 +39,11 @@ GraphicsSettings:
   - {fileID: 16001, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 17000, guid: 0000000000000000f000000000000000, type: 0}
   m_PreloadedShaders:
+<<<<<<< HEAD
   - {fileID: 20000000, guid: 78ddea6181cb5204b83902ca8f517d4f, type: 2}
+=======
+  - {fileID: 20000000, guid: ed5312254808a034b97464af98439926, type: 2}
+>>>>>>> parent of 3150a89... Removed TMP and Lightweight RP
   m_SpritesDefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000,
     type: 0}
   m_CustomRenderPipeline: {fileID: 11400000, guid: 6f441a7301afd894a9264dd16e644314,
