@@ -4,6 +4,7 @@ Theme: 'One More Time!'
 # Built With
 * [Unity](https://unity.com/)
 * [Rider](https://www.jetbrains.com/rider/)
+* [Krita](https://krita.org/en/)
 
 # Acknowledgements
 * [Voxel Dungeon Environment](https://assetstore.unity.com/packages/3d/environments/dungeons/voxel-dungeon-environment-set-1-57394)
