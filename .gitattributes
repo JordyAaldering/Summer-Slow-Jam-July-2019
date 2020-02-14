@@ -2,5 +2,4 @@
 * text=auto
 
 # Exclude TMP shader files from statistics
-Assets/TextMesh Pro/Resources/Shaders/*.shader linguist-vendored=true
-Assets/TextMesh Pro/Resources/Shaders/*.cginc linguist-vendored=true
+Assets/TextMesh Pro/Resources/Shaders/*.shader linguist-vendored
