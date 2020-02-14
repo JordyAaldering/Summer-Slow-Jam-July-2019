@@ -1,5 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-# Exclude ShaderLab files from statistics
-*.shader linguist-vendored
+# Exclude TMP shader files from statistics
+Assets/TextMesh Pro/Resources/Shaders/*.shader linguist-vendored
