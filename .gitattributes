@@ -1,6 +1,6 @@
 # Exclude TMP shader files from statistics
-Assets/TextMesh Pro/Resources/Shaders/*.shader linguist-vendored=false
-Assets/TextMesh Pro/Resources/Shaders/*.cginc linguist-vendored=false
+Assets/TextMesh Pro/Resources/Shaders/*.shader linguist-vendored=true
+Assets/TextMesh Pro/Resources/Shaders/*.cginc linguist-vendored=true
 
 # Auto detect text files and perform LF normalization
 * text=auto
