@@ -3,3 +3,4 @@
 
 # Exclude TMP shader files from statistics
 Assets/TextMesh Pro/Resources/Shaders/*.shader linguist-vendored
+Assets/TextMesh Pro/Resources/Shaders/*.cginc linguist-vendored
